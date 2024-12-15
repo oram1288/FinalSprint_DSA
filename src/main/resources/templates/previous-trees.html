@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Trees</title>
+</head>
+<body>
+<h1>Previous Trees</h1>
+  <ul>
+    <th:block th:each="tree : ${trees}">
+      <li>Numbers: [[${tree.numbers}]], Structure: [[${tree.treeStructure}]]</li>
+    </th:block>
+  </ul>
+</body>
+</html>
